@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+        <title>Crédito real</title>
+        <script src="js/jquery.js" type="text/javascript"></script>
+        <script>
+            function aparecer(pagina){
+                $("#conteudo").load(pagina);
+            }
+        </script>
+    </head>
+    <body onload="aparecer('galeria.html')">
+        <section id="principal">
+            <header id="cabecalho">
+                <figure id="logo"></figure>
+                <nav id="menu">
+                    <ul>
+                        <li onclick="aparecerS('galeria.html')">HOME</li>
+                        <li onclick="aparecer('historia.html')">HISTÓRIA</li>
+                        <li onclick="aparecer('produtos.html')">PRODUTOS</li>
+                        <li onclick="aparecer('contato.html')">CONTATO</li>
+                    </ul>
+                </nav>
+            </header>
+            <main id="corpo">
+                <section id="esquerdo"></section>
+                <section id="conteudo">
+                    
+                </section>
+            </main>
+            <footer id="rodape"></footer>
+        </section>    
+    </body>
+    
+</html>
